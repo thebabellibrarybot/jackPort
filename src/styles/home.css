@@ -2,7 +2,6 @@
 
 
 .home {
-    border: 1px solid blue;
     justify-content: center;
     text-align: center;
     display: inline;
@@ -10,10 +9,10 @@
 .btns {
     justify-content: center;
     text-align: center;
+    background-color: white;
 
-    background:white;
     padding:0.9rem 0.9rem;
-    margin:0.5rem 0.5rem;
+    margin:40px;
     font-size:1rem;
 
     border:solid 2px #41403E;
@@ -24,8 +23,7 @@
 }
 .out {
     padding: 20px;
-    background:white;
-
+    background-color: white;
 }
 .btns p {
     padding: 4px;
