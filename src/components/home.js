@@ -1,6 +1,8 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
+//import Nav from '../pgcomponents/nav';
+import SVG from '../components/svg';
 import '../styles/home.css'
 
 const Home = () => {
@@ -17,6 +19,10 @@ const Home = () => {
             <div className='out' id = 'o5'><span><p onClick={() => navigate("/bhgport")}>bhgPort</p></span></div> 
             <div className='out' id = 'o6'><span><p><a href="https://github.com/thebabellibrarybot/" target="_blank" rel="noreferrer">gitHubPort</a></p></span></div> 
         </div>
+        <div className='svg-div'>
+            <SVG/>
+        </div>
+        
     </div>
     )
 

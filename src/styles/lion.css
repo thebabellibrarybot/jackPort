@@ -1,0 +1,32 @@
+/* keyfram for making load div disapear */
+@keyframes missapear {
+
+    from { opacity: 1 }
+    to { opacity: 0 }
+    to { display: none }
+
+}
+@-webkit-keyframes missapear {
+
+    from { opacity: 1 }
+    to { opacity: 0 }
+    to { display: none }
+
+}
+
+
+
+.lionLoad {
+    
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #9773f5;
+    z-index: 999;
+
+    animation: missapear 2s;
+    -webkit-animation: missapear 2s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+
+}

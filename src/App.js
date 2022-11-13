@@ -1,9 +1,9 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Routes} from  'react-router-dom';
 
-import Nav from './pgcomponents/nav';
 import Home from './components/home';
 import BabPort from './components/babPort';
+import LionPort from './components/LiandUnPort';
 
 
 
@@ -11,8 +11,6 @@ function App() {
   return (
     <Router>
       <div className='app'>
-
-        <Nav/>
 
         <div className='content'>
           
@@ -23,7 +21,9 @@ function App() {
 
           <Routes>
             <Route path = "/babport" element = { <BabPort/> }/>
+            <Route path = "/lionport" element = { <LionPort /> }/>
           </Routes>
+
 
 
 
