@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Routes} from  'react-router-dom';
 import Home from './components/home';
 import BabPort from './components/babPort';
 import LionPort from './components/LiandUnPort';
-
+import BhgPort from './components/bhgPort';
 
 
 function App() {
@@ -22,6 +22,7 @@ function App() {
           <Routes>
             <Route path = "/babport" element = { <BabPort/> }/>
             <Route path = "/lionport" element = { <LionPort /> }/>
+            <Route path = "/bhgport" element = { <BhgPort/> }/>
           </Routes>
 
 

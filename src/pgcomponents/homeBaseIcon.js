@@ -15,9 +15,9 @@ const Svg = () => {
     }
     
     return (
-        <div className = 'svg1' onClick={onoffClick}>
+        <div className = 'svg1'>
             
-            <img src = {Pic} alt = 'one'/>
+            <img src = {Pic} alt = 'one' onClick={onoffClick}/>
             <div className={visible ? 'homeicons' : 'invisible'}>
                 <p>icon</p>
                 <SlideToggle/>
