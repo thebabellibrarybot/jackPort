@@ -1,10 +1,9 @@
 import { useContext } from "react";
 
-import ThemeContext from "../context/themeProvider";
+import { ThemeContext } from "../context/themeContext";
 
 const useTheme = () => {
     console.log('useTheme.js used')
-    console.log(ThemeContext)
     return useContext(ThemeContext);
 }
 

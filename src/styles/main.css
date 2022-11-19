@@ -1,112 +1,19 @@
-.homepage {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    vertical-align: middle;
-    text-align: center;
-    height: 100%;
-    width: 100%;
-    background-color: transparent;
-}
-h1 {
-    color:rgb(180, 179, 179)
-}
-.welcomebar {
-    z-index: 9;
-    display: inline;
-    align-items: center;
-    vertical-align: middle;
-    text-align: center;
-    padding: 10px;
-    z-index: 9;
-    background-color: #ffffff7d;
-    border: 1px solid rgb(180, 179, 179);
-    border-radius: 25px;
-    -moz-border-radius: 15px;
-    max-width: 80%;
-}
-.mainbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
-    background-color: transparent;
-}
-.mainbar h1 {
-    background-color: transparent;
-    
-}
-.prof {
-    background-color: transparent;
-    padding: 5px;
-}
-.prof p {
-    background-color: transparent;
-}
+
+/* list obj from home page applies toggle for making div visible */
 .listobj {
     background-color: transparent;
 }
 .invisible {
     display: none;
 }
-.homelist {
-    background-color: transparent;
-}
-.slots {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
-    border: 1px solid #b4b3b3;
-    border-radius: 25px;
-    -moz-border-radius: 15px;
-    background-color: #ffffff7d;
-    overflow-x: scroll
 
-}
-.slots p {
-    padding: 2rem;
-    background-color: transparent;
-    color: #999999;
-}
-.out {
-    padding: 10px;
-    background-color: transparent;
-}
-.svg img{
-    position: fixed;
-    bottom: 5%;
-    left: 5%;
-    height: 40%;
-    width: 40%;
-}
-.svg1 img {
-    padding: 3px;
-    height: 20%;
-    width: 20%;
-    background-color: transparent;
-}
-.svg1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: transparent;
-    border: 1px solid #b4b3b3;
-    border-radius: 25px;
-    -moz-border-radius: 15px;
-}
-.homeicons {
-    display: flex;
-    background-color: transparent;
-    padding: 5px;
-}
-.homeicons p {
-    color: #999999;
-    background-color: transparent;
-}
+
+
+
+
+
+
+
 .slide {
     background-color: transparent;
 }
@@ -114,12 +21,7 @@ h1 {
     display: inline;
     width: 200px;
 }
-.light {
-    background-color: transparent;
-}
-.dark {
-    background-color: transparent;
-}
+
 
 
 
@@ -128,9 +30,9 @@ h1 {
     justify-content: center;
     align-items: center;
     background-color: transparent;
-  }  
+}  
 .switch label {
-margin: 10px;
+    margin: 10px;
 }
 
 

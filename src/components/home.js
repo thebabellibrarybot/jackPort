@@ -1,13 +1,17 @@
 import React, { useState } from 'react';
-//import { useNavigate } from 'react-router-dom';
 
-//import Nav from '../pgcomponents/nav';
+
 import SVG from '../pgcomponents/svg2';
-import Svg from '../pgcomponents/homeBaseIcon';
+import HomeBaseIcon from '../pgcomponents/homeBaseIcon';
 import ListObj from '../pgcomponents/ListObj';
-import '../styles/main.css'
+
+
+import useTheme from '../hooks/useTheme';
 
 const Home = () => {
+
+    const  {isDarkMode}  = useTheme();
+
 
     //const navigate = useNavigate();
     const [visible, setVisible] = useState(false);
@@ -19,26 +23,21 @@ const Home = () => {
 
 
     return (
-    <div className='homepage'>
-    
-        <div className='welcomebar'>
-
-            <div className='mainbar'>
-                <h1 onClick={onoffClick}>Welcome</h1>
-                <div className='prof'>
-                    <Svg/>
+    <div className={isDarkMode ? 'light' : 'dark'}>
+        <div className='homepage'>
+            <div className='welcomebar'>
+                <div className='mainbar'>
+                    <h1 onClick={onoffClick}>Welcome</h1>
+                    <div className='prof'>
+                        <HomeBaseIcon/>
+                    </div>
+                </div>
+                <div class = {visible ? 'listobj' : 'invisible'}>
+                    <ListObj/>
                 </div>
             </div>
-
-            <div class = {visible ? 'listobj' : 'invisible'}>
-                <ListObj/>
-            </div>
-
+            <SVG/>
         </div>
-    
-
-        <SVG/>
-    
     </div>
     )
 

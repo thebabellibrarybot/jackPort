@@ -1,16 +1,20 @@
-import React, { createContext, useState } from "react";
+import React, { useState } from "react";
 
-const ThemeContext = createContext({})
+import { ThemeContext } from "./themeContext";
 
 const ThemeProvider = ({children}) => {
-    const [theme, setTheme] = useState('light')
-    console.log(theme, 'from theme providr')
     
+    // add state saver in local storage for onload...
+
+    const [isDarkMode, setIsDarkMode] = useState(false);
+    console.log(isDarkMode, 'is darkmode from themeProvider')
+    const toggleDarkMode = () => {
+        setIsDarkMode(curr => !curr)
+    }
 
     return ( 
-        <ThemeContext.Provider vlaue = {{ theme, setTheme}}>
+        <ThemeContext.Provider value = {{ isDarkMode, toggleDarkMode }}>
             {children}
-            
         </ThemeContext.Provider>
     )
 }

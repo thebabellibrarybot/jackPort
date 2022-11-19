@@ -1,8 +1,6 @@
 
 import React from 'react';
 
-import '../styles/bab.css';
-import Nav from '../pgcomponents/nav';
 
 
 const babPort = () => {
@@ -11,7 +9,6 @@ const babPort = () => {
         <div className = 'content'>
             <div className='babLoad'>
             </div>
-            <Nav/>
             <div className='babHome'>
                 <p>babhome</p>
                 <button onClick={()=> {console.log('clicked')}}>

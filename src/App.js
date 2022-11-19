@@ -1,4 +1,4 @@
-import React, { createContext, useState } from 'react'
+import React from 'react'
 import { BrowserRouter as Router, Route, Routes} from  'react-router-dom';
 
 import Home from './components/home';
@@ -6,20 +6,18 @@ import BabPort from './components/babPort';
 import LionPort from './components/LiandUnPort';
 import BhgPort from './components/bhgPort';
 
-//import ThemeProvider from './context/themeProvider';
+import ThemeProvider from './context/themeProvider';
+// specific themes
+import './components/scss/_main.scss';
+// global themes
+import './styles/main.css';
 
-export const ThemeContext = createContext();
 
 function App() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
-  console.log(isDarkMode, 'is darkmode')
-  const toggleDarkMode = () => {
-    setIsDarkMode(curr => !curr)
-  };
 
   return (
       <div className='app'>
-        <ThemeContext.Provider value = {{ isDarkMode, toggleDarkMode }}>
+        <ThemeProvider>
         <div className='content'>
         <Router>
           
@@ -37,7 +35,7 @@ function App() {
 
           </Router>
         </div>
-        </ThemeContext.Provider >
+        </ThemeProvider>
       </div>
     );
 }
