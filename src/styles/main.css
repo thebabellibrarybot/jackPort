@@ -107,9 +107,18 @@ h1 {
     color: #999999;
     background-color: transparent;
 }
+.slide {
+    background-color: transparent;
+}
 .obj {
     display: inline;
     width: 200px;
+}
+.light {
+    background-color: transparent;
+}
+.dark {
+    background-color: transparent;
 }
 
 
@@ -118,16 +127,12 @@ h1 {
 .switch {
     justify-content: center;
     align-items: center;
+    background-color: transparent;
   }  
-  .switch label {
-    margin: 10px;
-  }
-  #light .switch label {
-    color: black;
-  }
-  #dark .switch label {
-    color: white;
-  }
+.switch label {
+margin: 10px;
+}
+
 
 
 
@@ -135,12 +140,14 @@ h1 {
 
 ::-webkit-scrollbar {
     width: 80%;
+    background-color: transparent;
   } 
 /* Track */
 ::-webkit-scrollbar-track {
 box-shadow: inset 0 0 5px grey; 
 border-radius: 10px;
 width: 80%;
+background-color: transparent;
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {

@@ -20,10 +20,8 @@ const BhgPort = () => {
 
     return (
         <div className={theme}>
-            <div className='background flex'>
-                <p className='text'> light mode theme</p>
+                <p className='text'>{theme}</p>
                 <ReactSwitch onChange={switchTheme} checked={checked}/>
-            </div>
         </div>
     )
 

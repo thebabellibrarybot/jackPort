@@ -8,6 +8,7 @@ import SlideToggle from './slideToggle';
 
 const Svg = () => {
 
+
     const [visible, setVisible] = useState(false);
 
     function onoffClick() {
@@ -19,8 +20,9 @@ const Svg = () => {
             
             <img src = {Pic} alt = 'one' onClick={onoffClick}/>
             <div className={visible ? 'homeicons' : 'invisible'}>
-                <p>icon</p>
+                <div className='slide'>
                 <SlideToggle/>
+                </div>
             </div>
         </div>
     )

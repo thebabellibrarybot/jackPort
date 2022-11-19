@@ -1,19 +1,5 @@
 @use '../scss/colors';
 
-
-
-.flex {
-
-    display: flex;
-    position: absolute;
-    align-items: center;
-    justify-content: center;
-    height: 99%;
-    width: 99%;
-    border: 5px solid black;
-
-}
-
 .light {
     .text{
 

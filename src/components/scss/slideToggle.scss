@@ -1,0 +1,17 @@
+@use '../scss/colors';
+
+.light {
+
+    .switch {
+        background-color: transparent;
+    }
+    .txt {
+        background-color: transparent;
+    }
+}
+.dark {
+    .switch {
+        border: 1px solid black;
+        background-color: black;
+    }
+}
