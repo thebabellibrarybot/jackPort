@@ -4,7 +4,8 @@ import PicDark from '../Vector 1.png';
 import PicLight from '../Vector 1 light.png'
 import SlideToggle from './slideToggle';
 import useTheme from '../hooks/useTheme';
-
+import ManageUserIcon from '../pgcomponents/manageusericon.js';
+import AboutContact from '../pgcomponents/aboutcontact.js';
 
 
 const Svg = () => {
@@ -24,8 +25,14 @@ const Svg = () => {
             
             <img src = {pic} alt = 'one' onClick={onoffClick}/>
             <div className={visible ? 'homeicons' : 'invisible'}>
-                <div className='slide'>
-                <SlideToggle/>
+                <div className='slideicon'>
+                    <SlideToggle/>
+                </div>
+                <div className='slideicon'>
+                    <ManageUserIcon/>
+                </div>
+                <div className='slideicon'>
+                    <AboutContact/>
                 </div>
             </div>
 

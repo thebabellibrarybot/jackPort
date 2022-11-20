@@ -5,6 +5,7 @@ import Home from './components/home';
 import BabPort from './components/babPort';
 import LionPort from './components/LiandUnPort';
 import BhgPort from './components/bhgPort';
+import Cv from './components/cv.js';
 
 import ThemeProvider from './context/themeProvider';
 // specific themes
@@ -30,6 +31,7 @@ function App() {
             <Route path = "/babport" element = { <BabPort/> }/>
             <Route path = "/lionport" element = { <LionPort /> }/>
             <Route path = "/bhgport" element = { <BhgPort/> }/>
+            <Route path = "/cv" element = { <Cv/> }/>
           </Routes>
 
 

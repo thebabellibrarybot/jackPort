@@ -13,6 +13,7 @@ const ListObj = () => {
                 <div className='out' id = 'o3'><span><p onClick={() => navigate("/hmfasport")}>hmfasPort</p></span></div> 
                 <div className='out' id = 'o4'><span><p onClick={() => navigate("/tacport")}>tacPort</p></span></div> 
                 <div className='out' id = 'o5'><span><p onClick={() => navigate("/bhgport")}>bhgPort</p></span></div> 
+                <div className='out' id = 'o5'><span><p onClick={() => navigate("/cv")}>cv</p></span></div> 
                 <div className='out' id = 'o6'><span><p><a href="https://github.com/thebabellibrarybot/" target="_blank" rel="noreferrer">gitHubPort</a></p></span></div> 
             </div>
         </div>
